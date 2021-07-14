@@ -1,0 +1,203 @@
+
+
+.Homepage{
+    height:100%;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,233,178,1) 100%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.teaser{
+    margin-top: 2px;
+    width:100%;
+    background-image:linear-gradient(rgba(10, 0, 5, 0.2), rgba(10, 0, 5, 0.2)),url(../images/red_petals.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    padding: 8rem 0;
+    box-shadow: 3px 3px 14px rgba(0,0,0,1);
+}
+.teaser_text{
+    color: rgb(87, 84, 84);
+    word-spacing: 0.3rem;
+    color:#000;
+}
+
+.services{
+    height: 100%;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.service_display{
+    height: 100%;
+    display:flex;
+    width: 100%;
+}
+
+.service_A{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    text-align:left;
+}
+
+.service_B{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+.service_C{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+.service_image{
+    height: 40vh;
+    border-radius: 10px;
+}
+.Pic_div{
+    animation: flyin_pic 3s ease-in;
+    
+   
+}
+/* @keyframes flyin_pic{
+    0%{
+        opacity: 0;
+        transform: translateX(-90px) ;
+    }
+    100%{
+        opacity:1;
+        transform: translateX(0px);
+    }
+}
+@keyframes flyin_text{
+    0%{
+        opacity: 0;
+        transform: translateX(200px) ;
+    }
+    100%{
+        opacity:1;
+        transform: translateX(0px);
+    }
+} */
+.right_push{
+    margin-right: 20rem;
+}
+.left_push{
+    margin-left: 20rem;
+}
+.service_text{
+    width: 330px;
+    background-color: rgba(9, 70, 9, 0.255);
+    box-shadow: 2px 2px 12px #399749;
+    border-radius: 10px;
+    animation: flyin_text 3s ease-in;
+}
+.service_text > ul{
+    color:#000;
+    line-height: 2rem;
+    word-spacing: 0.3rem;
+    font-size: 18px;
+    font-weight: 500;
+    list-style:  decimal inside none;
+    padding: 1rem 1.5rem;
+}
+.heading{
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
+
+.cta{
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,1)), url(../images/air_spray.jpg);
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    margin: 6rem auto;
+    padding: 100px 0;
+    border-radius: 10px;
+    width: 80%;
+}
+
+.cta > p {
+    font-size: 35px;
+    font-weight: 600;
+    color: #fff;
+}
+.products{
+    height: 50px;
+    width: 120px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    color: #000;
+    background: rgb(238,174,202);
+    transition: 1s ease-out;
+    margin: 1.5rem 0;
+    font-size: 20px;
+    font-weight: 700;
+}
+.products:hover{
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,233,178,1) 100%);
+    transform:scale(1.2);
+}
+
+.footer{
+    text-align: center;
+    background: radial-gradient(circle, rgb(7, 5, 6) 0%, rgba(148,233,178,1) 100%);
+    margin:0rem 0rem 0rem 0rem;
+    padding: 5rem 0;
+    color:#fff;
+    width:100%;
+}
+
+/* ############## 
+    media queries 
+    ################ */
+@media (max-width: 960px){
+    .right_push{
+        margin-right: 8rem;
+    }
+    .left_push{
+        margin-left: 8rem;
+    }
+    .reduce-W{
+        width: 390px;
+    }
+}
+@media (max-width:768px){
+    .service_A{
+        flex-direction: column;
+    }
+    .service_B{
+        flex-direction: column;
+    }
+    .service_C{
+        flex-direction:column;
+    }
+    .right_push{
+        margin-right: 0rem;
+        margin-bottom: 2rem;
+    }
+    .left_push{
+        margin-left: 0rem;
+        margin-bottom: 2rem;
+    }
+    .service_text{
+        width: 290px;
+    }
+    .cta > p {
+        font-size: 25px;  
+    }
+    .service_image{
+        height: 30vh;
+    }
+}

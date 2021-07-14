@@ -1,0 +1,159 @@
+.nav_container{
+    width:100%;
+    height: 73px;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    background-color:rgba(0, 50, 0, 0.6);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+.left__Nav{
+    display:flex;
+    align-items: center;
+}
+
+.nav_logo{
+    display:flex;
+    margin-left: 2rem;
+    align-items: center;
+    height: 73px;
+}
+
+.nav__links{
+    display:flex;
+    list-style: none;
+    justify-content: space-around;
+    margin-left: 3rem;
+}
+
+.nav__links > li > a{
+    text-decoration: none;
+    color:black;
+    font-weight: 600;
+}
+
+.nav__links > li > a:hover{
+    color:#0c7209;
+}
+
+.nav__links > li{
+    padding: 1.5rem 2rem;
+}
+
+.nav_logo > img{
+    height: 10vh;
+}
+
+.nav_logo > h1 {
+    font-size: 15px;
+}
+
+.right__Nav{
+    display: flex;
+    align-items: center;
+}
+
+.user__panel{
+    display:flex;
+    flex-direction: row;
+}
+.user__panel > a {
+    text-decoration: none;
+    color: #000;
+    font-weight:600;
+}
+.sign__up{
+    margin-right: 1rem;
+}
+
+.cart_div{
+    margin-right: 3rem;
+    list-style: none;
+    margin-left: 3rem;
+}
+
+.cart_link{
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    height: 30px;
+    width: auto;
+    border-radius: 10px;
+    padding: 0rem 0.2rem;
+    border: 2px solid #000;
+    background-color: rgba(0, 0, 0, 0.1);
+} 
+
+.cart_link:hover{
+    background: #000;
+    color:#fff;
+    border: 2px solid #000;
+}
+
+
+.fas{
+    color:#0c7209;
+}
+
+.counter{
+   margin-left: 0.8rem;
+   display:flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+}
+.cart_counter{
+    margin-left: 0.5rem;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background:#0c7209;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#open{
+    display:none;
+    color: #000;
+    cursor: pointer;
+}
+
+@media (max-width: 1024px){
+    .nav__links > li{
+    padding: 1.5rem 1rem;
+    }
+}
+@media (max-width: 960px){
+    .nav__links{
+        display: none;
+    }
+    .cart_div{
+        display: none;
+    }
+    #open{
+        display:block;
+        font-size: 2rem;
+        margin-right: 0.4rem;
+        cursor: pointer;
+    }
+
+}
+@media (max-width:500px){
+    .nav_logo > img{
+        height: 6vh;
+    }
+    
+    .nav_logo > h1 {
+        font-size: 10px;
+    }
+
+    .nav_logo{
+        margin-left: 1rem;
+    }
+}

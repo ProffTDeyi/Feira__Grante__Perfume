@@ -1,0 +1,142 @@
+.product_container{
+    display:flex;
+    max-width: 1300px;
+    margin:3rem auto;
+}
+.left_product_info{
+    display:flex;
+    flex:0.8;
+}
+.item_pic{
+    margin: 1rem;
+    flex:0.6;
+}
+.pic{
+   height: 250px;
+   padding-left: 13rem;
+   border-radius: 10px;
+}
+.left_info{
+    flex:0.4;
+    margin: 1rem;
+    height: fit-content;
+    background: rgba(9, 70, 9, 0.255);
+    font-size:0.9rem;
+    border-radius: 10px;
+}
+.left_item_name{
+    font-size: 1rem;
+    font-weight: 600;
+}
+.item_description{
+    font-size: 0.9rem;
+}
+
+.left_info > p,
+.right_info > p{
+    padding:1rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.left_info > p:last-child,
+.right_info > p:last-child{
+    border: none;
+}
+
+.right_product_info{
+    flex:0.2;
+}
+
+.right_info{
+    width:250px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    background: rgba(9, 70, 9, 0.255);
+}
+
+.right_info p{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    font-size: 0.9rem;
+}
+.right_info p > button{
+    padding: 10px 16px;
+    grid-column: 1/-1;
+    color:#000;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    font-weight: 700;
+}
+.right_info p > button:hover{
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,233,178,1) 100%);
+}
+
+.right_info select {
+     padding: 10px 16px;
+}
+/* #######----- Product Page Queries -----###### */
+@media screen and (max-width:968px){
+    .product_container{
+        flex-direction: column;
+    }
+    .left_product_info{
+        flex-direction: column;
+        flex:1;
+    }
+    .pic{
+   padding-left: 17rem;
+    }
+    .left_info{
+        flex:1;
+    }
+    .right_product_info{
+        flex:1;
+        padding:1rem;
+    }
+    .right_info{
+        flex:1;
+        width:100%;
+        margin: 0;
+    }
+
+}
+/* #######----- Item Picture Queries -----###### */
+@media screen and (max-width:768px){
+    .pic{
+        padding-left: 16rem;
+         }
+}
+@media screen and (max-width:700px){
+    .pic{
+        padding-left: 15rem;
+         }
+}
+@media screen and (max-width:540px){
+    .pic{
+        padding-left: 10rem;
+         }
+}
+@media screen and (max-width:500px){
+    .pic{
+        padding-left: 8rem;
+         }
+}
+@media screen and (max-width:425px){
+    .pic{
+        padding-left: 6rem;
+         }
+}
+@media screen and (max-width:375px){
+    .pic{
+        padding-left: 4rem;
+         }
+}
+@media screen and (max-width:320px){
+    .pic{
+        padding-left: 2rem;
+         }
+}
+@media screen and (max-width:280px){
+    .pic{
+        padding-left: 0rem;
+         }
+}
